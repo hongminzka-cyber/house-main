@@ -4,10 +4,10 @@ public class Furniture : MonoBehaviour
 {
     private bool isDragging = false;
 
-    public float minX = -5f;
-    public float maxX = 5f;
-    public float minZ = -5f;
-    public float maxZ = 5f;
+    public float minX = 0f;
+    public float maxX = 12f;
+    public float minZ = -26f;
+    public float maxZ = -12f;
 
     void OnMouseDown()
     {
@@ -25,17 +25,17 @@ public class Furniture : MonoBehaviour
         {
             Vector3 targetPos = GetMouseHitPoint();
 
-            // Ëø×¡YÖá£¨·ÀÖ¹·É£©
+            // ï¿½ï¿½×¡Yï¿½á£¨ï¿½ï¿½Ö¹ï¿½É£ï¿½
             targetPos.y = transform.position.y;
 
-            // ÏÞÖÆ·¶Î§
+            // ï¿½ï¿½ï¿½Æ·ï¿½Î§
             float clampedX = Mathf.Clamp(targetPos.x, minX, maxX);
             float clampedZ = Mathf.Clamp(targetPos.z, minZ, maxZ);
 
             transform.position = new Vector3(clampedX, transform.position.y, clampedZ);
         }
 
-        // Ðý×ª
+        // ï¿½ï¿½×ª
         if (Input.GetKeyDown(KeyCode.R))
         {
             transform.Rotate(0, 90, 0);
@@ -49,7 +49,7 @@ public class Furniture : MonoBehaviour
 
         foreach (RaycastHit hit in hits)
         {
-            // ´òµ½µØÃæ²ÅÓÃ
+            // ï¿½òµ½µï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             if (hit.collider.CompareTag("Ground"))
             {
                 return hit.point;
