@@ -320,7 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81a83f2d555e4424cba33ebd8c3fa5b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brokenPrefab: {fileID: 0}
+  brokenPrefab: {fileID: 2566298809629814887, guid: d250b1ae51b7bda4ab7c1814a326f51a, type: 3}
 --- !u!4 &4518435853562727995 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 605c806a9eb55da48bd5426a1633f9fb, type: 3}
