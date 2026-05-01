@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6264151091991293439
+--- !u!1 &8278417529447437922
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,12 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7745525122022339921}
-  - component: {fileID: 4192012493923953736}
-  - component: {fileID: 3187878760691322364}
-  - component: {fileID: 7841579657705928344}
-  - component: {fileID: 3996458164110558649}
-  - component: {fileID: 6103794474832805316}
+  - component: {fileID: 4949835488283970630}
+  - component: {fileID: 5983084392511718475}
+  - component: {fileID: 7705185758297721720}
+  - component: {fileID: 133475069766059186}
+  - component: {fileID: 9204235569753235512}
+  - component: {fileID: 6644128456529810369}
   m_Layer: 0
   m_Name: '[BuildingBlock] DistanceHandGrabInstallationRoutine'
   m_TagString: Untagged
@@ -21,13 +21,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7745525122022339921
+--- !u!4 &4949835488283970630
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6264151091991293439}
+  m_GameObject: {fileID: 8278417529447437922}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -36,33 +36,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 5456563927159733624}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4192012493923953736
+--- !u!114 &5983084392511718475
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6264151091991293439}
+  m_GameObject: {fileID: 8278417529447437922}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b023183069df224080314a560e6e1ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   blockId: 3f1827c2-c682-46d8-999e-0954e37e833e
-  instanceId: c9a01b17-0da5-4786-b42e-db10d70589b2
+  instanceId: 97aa5ced-e443-4405-a55d-00d4c6eeaa0d
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 20b9ad69-c205-488d-a6b2-d3d7ca6c1e53
     _installationVariants:
     - _memberName: mode
-      _value: '{"value__":2}'
---- !u!114 &3187878760691322364
+      _value: '{"value__":0}'
+--- !u!114 &7705185758297721720
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6264151091991293439}
+  m_GameObject: {fileID: 8278417529447437922}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: baed3e011583e1844a6e85b1cd0657f2, type: 3}
@@ -92,16 +92,16 @@ MonoBehaviour:
     _ringRequirement: 2
     _pinkyRequirement: 1
     _unselectMode: 0
-  _movementProvider: {fileID: 3996458164110558649}
+  _movementProvider: {fileID: 9204235569753235512}
   _handAligment: 0
   _handGrabPoses: []
---- !u!114 &7841579657705928344
+--- !u!114 &133475069766059186
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6264151091991293439}
+  m_GameObject: {fileID: 8278417529447437922}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07525681efbca7a4e9643ab3a592ada7, type: 3}
@@ -116,26 +116,26 @@ MonoBehaviour:
   _grabSource: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
   _physicsGrabbable: {fileID: 0}
-  _movementProvider: {fileID: 3996458164110558649}
---- !u!114 &3996458164110558649
+  _movementProvider: {fileID: 9204235569753235512}
+--- !u!114 &9204235569753235512
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6264151091991293439}
+  m_GameObject: {fileID: 8278417529447437922}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8894220c202ef0c46a4446465edae43d, type: 3}
+  m_Script: {fileID: 11500000, guid: 953054d108799b942815afb3405983ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6103794474832805316
+--- !u!114 &6644128456529810369
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6264151091991293439}
+  m_GameObject: {fileID: 8278417529447437922}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0529a9671a3b6a74fab00c4d05312c64, type: 3}
@@ -225,7 +225,7 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 400000, guid: 044924269960e4cf8acae471f250277d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7745525122022339921}
+      addedObject: {fileID: 4949835488283970630}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 044924269960e4cf8acae471f250277d, type: 3}
       insertIndex: -1

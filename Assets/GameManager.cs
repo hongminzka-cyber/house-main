@@ -35,4 +35,14 @@ public class GameManager : MonoBehaviour
             confirmButton.interactable = true;
         }
     }
+
+    public void OnConfirmClicked()
+    {
+        Breakable[] all = FindObjectsOfType<Breakable>();
+
+        foreach (Breakable b in all)
+        {
+            b.Break();
+        }
+    }
 }
